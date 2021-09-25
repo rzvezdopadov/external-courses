@@ -1,4 +1,4 @@
-const OurSplice = (arr, begin, end) => {
+const ourSplice = (arr, begin, end) => {
   let beginTemp;
   let endTemp;
 
@@ -6,6 +6,7 @@ const OurSplice = (arr, begin, end) => {
     beginTemp = 0;
   } else if (begin < 0) {
     beginTemp = begin + arr.length;
+
     if (beginTemp < 0) { beginTemp = 0; }
   } else {
     beginTemp = begin;
@@ -15,6 +16,7 @@ const OurSplice = (arr, begin, end) => {
     endTemp = arr.length;
   } else if (end < 0) {
     endTemp = end + arr.length;
+
     if (endTemp < 0) { endTemp = arr.length; }
   } else if (end > arr.length) {
     endTemp = arr.length;
@@ -31,4 +33,4 @@ const OurSplice = (arr, begin, end) => {
   return arrTemp;
 };
 
-module.exports = OurSplice;
+module.exports = ourSplice;

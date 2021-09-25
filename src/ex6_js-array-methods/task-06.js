@@ -1,6 +1,7 @@
-const OurReduce = (arr, fn, initValue) => {
+const ourReduce = (arr, fn, initValue) => {
   let previousValue = initValue;
   let startPos = 0;
+
   if (initValue === undefined) {
     previousValue = arr[0];
     startPos = 1;
@@ -13,4 +14,4 @@ const OurReduce = (arr, fn, initValue) => {
   return previousValue;
 };
 
-module.exports = OurReduce;
+module.exports = ourReduce;

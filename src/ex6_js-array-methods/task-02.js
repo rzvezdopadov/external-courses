@@ -1,4 +1,4 @@
-const OurSome = (arr, fn) => {
+const ourSome = (arr, fn) => {
   for (let i = 0; i < arr.length; i += 1) {
     if (fn.call(this, arr[i], i, arr)) return true;
   }
@@ -6,4 +6,4 @@ const OurSome = (arr, fn) => {
   return false;
 };
 
-module.exports = OurSome;
+module.exports = ourSome;

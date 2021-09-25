@@ -1,5 +1,6 @@
-const OurFilter = (arr, fn) => {
+const ourFilter = (arr, fn) => {
   const arrTemp = [];
+
   for (let i = 0; i < arr.length; i += 1) {
     if (fn.call(this, arr[i], i, arr)) {
       arrTemp.push(arr[i]);
@@ -9,4 +10,4 @@ const OurFilter = (arr, fn) => {
   return arrTemp;
 };
 
-module.exports = OurFilter;
+module.exports = ourFilter;
