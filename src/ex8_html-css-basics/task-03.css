@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+div {
+    margin: 5rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: chartreuse;
+}
+
+.div1 {
+    border: solid #c54646 10px;
+}
+
+.div2 {
+    outline: solid rgb(216, 130, 238) 10px;
+}
+
+.div3 {
+    box-shadow: 0 0 0 10px rgb(17, 0, 255);
+}
