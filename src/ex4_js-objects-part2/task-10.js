@@ -1,3 +1,3 @@
-const InvertedString = (str) => str.split('').reverse().join('');
+const invertedString = (str) => str.split('').reverse().join('');
 
-module.exports = InvertedString;
+module.exports = invertedString;

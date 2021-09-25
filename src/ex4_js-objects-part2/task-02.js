@@ -1,3 +1,3 @@
-const CreateObjNoProto = () => Object.create(null);
+const createObjNoProto = () => Object.create(null);
 
-module.exports = CreateObjNoProto;
+module.exports = createObjNoProto;

@@ -1,3 +1,3 @@
-const DeleteStartAndEndOneSpace = (str) => str.replace(/^\s/, '').replace(/\s$/, '');
+const deleteStartAndEndOneSpace = (str) => str.replace(/^\s/, '').replace(/\s$/, '');
 
-module.exports = DeleteStartAndEndOneSpace;
+module.exports = deleteStartAndEndOneSpace;
