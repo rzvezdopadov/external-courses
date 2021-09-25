@@ -1,3 +1,3 @@
-const CreateNewObjectFull = (obj) => JSON.parse(JSON.stringify(obj));
+const createNewObjectFull = (obj) => JSON.parse(JSON.stringify(obj));
 
-module.exports = CreateNewObjectFull;
+module.exports = createNewObjectFull;

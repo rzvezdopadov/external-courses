@@ -1,3 +1,3 @@
-const CreateNewObjectLite = (obj) => ({ ...obj });
+const createNewObjectLite = (obj) => ({ ...obj });
 
-module.exports = CreateNewObjectLite;
+module.exports = createNewObjectLite;
