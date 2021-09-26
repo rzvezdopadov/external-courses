@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    padding: 30px;
+}
+  
+header {
+    margin: 0.5rem;
+    display: flex;
+    background: lightblue;
+}
+
+div.row {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem;
+    background: lightgreen;
+    width: 75%;
+}
+
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+
+aside {
+    display: flex;
+    margin: 0.5rem;
+    background: pink;
+    width: 25%;
+}
+
+header, article, section, .module {
+    padding: 1rem;
+}
