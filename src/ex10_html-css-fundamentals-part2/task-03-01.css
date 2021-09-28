@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+}
+
+div {
+    margin: 10px;
+}

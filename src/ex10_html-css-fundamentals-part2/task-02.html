@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="task-02.css">
+    <title>Наш сайт</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div class="mainContainer">
+        <form method="POST" action="http://httpbin.org/post">
+            <fieldset>
+                <legend> Personal data </legend>
+                <div> Surname <input type="text" name="surname"></div>
+                <div> First Name <input type="text" name="firstname"></div>
+                <div> Middle name <input type="text" name="middlename"></div>
+                <div> You are <input type="radio" checked name="gendermale"> male <input type="radio" name="gendermale"> female </div>
+                <div> Age <input type="number" name="age" min="18" max="101" value="18"></div>
+                <div> Country of Residence 
+                    <select name="country">
+                        <option selected disabled>Change country</option>
+                        <option value="Russia">Russia</option>
+                        <option value="India">India</option>
+                        <option value="South America">South America</option>
+                    </select>
+                </div>
+                <div> Sity <input type="checkbox" name="cityryazan"> Ryazan <input type="checkbox" name="citymoscow"> Moscow </div>
+                <div> Photograpfy <input type="file" name="photograpfy"></div>
+                <hr>
+                <div>
+                    <select id="ourtitle" name="ourtitle" multiple>
+                        <optgroup label="Technologies">
+                            <option value="t1">Web Master</option>
+                            <option value="t2">Database Administrator</option>
+                            <option value="t3">Computer-aided disign</option>
+                        </optgroup>
+                        <optgroup label="Finance">
+                            <option value="f1">Economic Planning</option>
+                            <option value="f2">Management accounting</option>
+                            <option value="f3">Budgeting and planning</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>Salary<input type="range" name="salary" min="1000" max="10000" step="100"></div>
+                <div><textarea id="aboutyou" name="aboutyou" placeholder="Tell us about yourself..."></textarea></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact information</legend>
+                <div> Site <input type="url" name="site"></div>
+                <div> Email <input type="email" name="email"></div>
+                <div> Phone <input type="tel" name="phone"></div>
+            </fieldset>
+
+            <div> Password <input type="password" required name="password"></div>
+            
+            <div> 
+                <input type="submit" name="send">
+                <input type="reset" name="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

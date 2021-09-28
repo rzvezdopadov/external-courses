@@ -1,0 +1,33 @@
+
+#idtable {
+    text-align: center;
+}
+
+td {
+    margin: 5px;
+    padding: 10px;
+}
+
+tr.headtable {
+    text-transform: uppercase;
+}
+
+td.username {
+    text-transform: capitalize;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #7fb3b3;
+}
+
+tr:nth-child(2n) {
+    background-color: #bbd6d6;
+}
+
+tr:not(.headtable):hover {
+    background-color: #b96e5b;
+}
+
+tr.headtable:hover {
+    background-color: #5bb963;
+}
