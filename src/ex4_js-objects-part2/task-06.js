@@ -1,3 +1,3 @@
-const allFirstSymbolUpperCase = (str) => str.replace(/(\s|^)([a-z])/g, (c) => c.toUpperCase());
+const setAllFirstSymbolUpperCase = (str) => str.replace(/(\s|^)([a-z])/g, (c) => c.toUpperCase());
 
-module.exports = allFirstSymbolUpperCase;
+module.exports = setAllFirstSymbolUpperCase;

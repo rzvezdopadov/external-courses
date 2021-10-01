@@ -1,4 +1,4 @@
-const howManyEachLetter = (str) => {
+const getCounterOfEachLetter = (str) => {
   const obj = {};
 
   str.split('')
@@ -15,4 +15,4 @@ const howManyEachLetter = (str) => {
   }
 };
 
-module.exports = howManyEachLetter;
+module.exports = getCounterOfEachLetter;

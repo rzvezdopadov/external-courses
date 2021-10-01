@@ -1,4 +1,4 @@
-const integratesSubstring = (str, subStr, pos) => {
+const setSubstring = (str, subStr, pos) => {
   const tempStr = str.split(' ');
 
   tempStr.splice(pos + 1, 0, subStr);
@@ -6,4 +6,4 @@ const integratesSubstring = (str, subStr, pos) => {
   return tempStr.join(' ');
 };
 
-module.exports = integratesSubstring;
+module.exports = setSubstring;

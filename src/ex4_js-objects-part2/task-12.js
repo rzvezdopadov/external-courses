@@ -1,3 +1,3 @@
-const addWithAccuracyThree = (a, b) => Number((a + b).toFixed(3));
+const getAddWithAccuracyThree = (a, b) => Number((a + b).toFixed(3));
 
-module.exports = addWithAccuracyThree;
+module.exports = getAddWithAccuracyThree;

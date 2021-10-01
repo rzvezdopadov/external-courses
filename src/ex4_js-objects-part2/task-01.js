@@ -1,3 +1,3 @@
-const serchPropsInProtoObj = (keyObj, obj) => Object.getPrototypeOf(obj)[keyObj];
+const searchPropsInProtoObj = (keyObj, obj) => Object.getPrototypeOf(obj)[keyObj];
 
-module.exports = serchPropsInProtoObj;
+module.exports = searchPropsInProtoObj;

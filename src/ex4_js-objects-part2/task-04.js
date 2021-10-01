@@ -1,3 +1,3 @@
-const firstSymbolUpperCase = (str) => str.replace(/^./g, (c) => c.toUpperCase());
+const setFirstSymbolUpperCase = (str) => str.replace(/^./g, (c) => c.toUpperCase());
 
-module.exports = firstSymbolUpperCase;
+module.exports = setFirstSymbolUpperCase;
