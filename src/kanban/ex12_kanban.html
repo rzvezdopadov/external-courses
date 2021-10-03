@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="ex12_kanban.css" />
+    <script src="ex12_kanban.js"></script>
+    <title>Наш сайт</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body class="body">
+    <header class="flexboxtype header">
+      <div class="flexboxtype blockleft">
+        <img class="logo" src="logo.png" alt="logo.png" />
+        <label class="brand">Awesome Kanban Board</label>
+      </div>
+      <div class="flexboxtype blockright">
+        <div class="flexboxtype createnewlist">
+          <img class="add-list" src="add.png" alt="add.png" />
+          <label class="labelcreatenew">Create new list</label>
+        </div>
+
+        <div class="flexboxtype user-menu">
+          <img
+            class="user-avatar"
+            src="https://bigpicture.ru/wp-content/uploads/2020/11/4c6a92ce073181575173cb5a9a733c32.jpg"
+            alt="https://bigpicture.ru/wp-content/uploads/2020/11/4c6a92ce073181575173cb5a9a733c32.jpg"
+          />
+          <img
+            class=""
+            id="arrow-down"
+            src="arrow-down.png"
+            alt="arrow-down.png"
+          />
+          <div class="flexboxtype menu" id="menu"></div>
+        </div>
+      </div>
+    </header>
+    <main class="flexboxtype content"></main>
+    <footer class="flexboxtype footer">
+      <div class="flexboxtype blockleftfoot">
+        <label class="active-tasks">Active tasks: &lt;N&gt;</label>
+        <label class="finished-tasks">Finished tasks: &lt;M&gt;</label>
+      </div>
+      <div class="flexboxtype blockrightfoot">
+        <label class="kanban-board"
+          >Kanban board by &lt;NAME&gt;, &lt;YEAR&gt;</label
+        >
+      </div>
+    </footer>
+  </body>
+</html>
