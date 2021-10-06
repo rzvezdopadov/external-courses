@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     text-align: center;
 }
 
@@ -8,6 +8,7 @@ hr {
 }
 
 /* first realization */
+
 div.ourframe1 {
     position: relative;
     width: 10rem;
@@ -21,13 +22,14 @@ div.ourframein1 {
     top: 1rem;
     opacity: 50%;
 }
+
 /* second realization */
 
 div.ourframe2 {
     width: 10rem;
     height: 10rem;
     background-color: orange;
-    box-shadow: 1rem 1rem 0 0 rgba(255, 166, 0, 0.527), 2rem 2rem 0 0 rgba(255, 166, 0, 0.219);
+    box-shadow: 1rem 1rem 0 0 #ffa60086, 2rem 2rem 0 0 #ffa60038;
 }
 
 /* third realization */
