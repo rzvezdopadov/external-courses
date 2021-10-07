@@ -1,0 +1,62 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+hr {
+    margin: 3rem;
+}
+
+/* first realization */
+
+div.ourframe1 {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background-color: chartreuse;
+}
+
+div.ourframein1 {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    opacity: 50%;
+}
+
+/* second realization */
+
+div.ourframe2 {
+    width: 10rem;
+    height: 10rem;
+    background-color: orange;
+    box-shadow: 1rem 1rem 0 0 #ffa60086, 2rem 2rem 0 0 #ffa60038;
+}
+
+/* third realization */
+
+div.ourframe3 {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background-color: #002fff;
+}
+
+div.ourframe3::after {
+    position: absolute;
+    content: '';
+    width: 10rem;
+    height: 10rem;
+    background-color: #002fff86;
+    top: 1rem;
+    left: 1rem;
+}
+
+div.ourframe3::before {
+    position: absolute;
+    content: '';
+    width: 10rem;
+    height: 10rem;
+    background-color: #002fff34;
+    top: 2rem;
+    left: 2rem;
+}
