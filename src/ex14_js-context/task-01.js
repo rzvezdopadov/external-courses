@@ -48,7 +48,7 @@ Calculator.prototype = {
   },
 
   fetchData(callback) {
-    this.callback = callback(500);
+    this.callback = setTimeout(() => callback(500), 1000);
 
     return this;
   },
