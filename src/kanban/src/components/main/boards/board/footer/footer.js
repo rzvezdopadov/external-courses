@@ -1,9 +1,5 @@
-/* eslint-disable no-alert */
 /* eslint-disable import/extensions */
-/* eslint-disable import/no-cycle */
-import { UpdateMain } from '../../../main.js';
-
-export const CreateBoardFooter = (key, state) => {
+export const CreateBoardFooter = (key, state, CreateMain) => {
   const elemAddCard = document.createElement('div');
   elemAddCard.classList.add('flexboxtype');
   elemAddCard.classList.add('add-card');
@@ -41,7 +37,7 @@ export const CreateBoardFooter = (key, state) => {
           state[key].items.push(elemTaskDo.innerHTML);
         } else if (keyTaskRepeat !== -1) alert('Нельзя создать заметку с одинаковым содержимым!');
 
-        UpdateMain(state);
+        CreateMain(state);
       });
 
       elemTask.addEventListener('keypress', (event) => {
@@ -79,11 +75,11 @@ export const CreateBoardFooter = (key, state) => {
           state[key].items.push(value);
         }
 
-        UpdateMain(state);
+        CreateMain(state);
       });
 
       elemTask.addEventListener('blur', () => {
-        UpdateMain(state);
+        CreateMain.bind(state);
       });
     }
 

@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import { CreateModalInput } from '../../../modal/modal.js';
-import { UpdateMain } from '../../../main/main.js';
+import { CreateMain } from '../../../main/main.js';
 import { getState } from '../../../state/state.js';
 
 export const CreateNewList = () => {
@@ -28,7 +28,7 @@ export const CreateNewList = () => {
         state[i] = state[i - 1];
       }
       state[0] = { title: value, items: [] };
-      UpdateMain(state);
+      CreateMain(state);
     });
   });
 

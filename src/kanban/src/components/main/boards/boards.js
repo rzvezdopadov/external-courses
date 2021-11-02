@@ -1,20 +1,17 @@
-/* eslint-disable import/no-cycle */
 /* eslint-disable import/extensions */
-/* eslint-disable no-restricted-syntax */
 import { getState } from '../../state/state.js';
 import { CreateBoard } from './board/board.js';
 
-export const CreateBoards = () => {
+export const CreateBoards = (CreateMain) => {
   const div = document.createElement('div');
   div.classList.add('main-div-container');
+  div.id = 'main-div';
 
   const state = getState();
 
-  for (const key in state) {
-    if (state.hasOwnProperty(key)) {
-      div.appendChild(CreateBoard(key, state));
-    }
-  }
+  Object.keys(state).forEach((key) => {
+    div.appendChild(CreateBoard(key, state, CreateMain));
+  });
 
   if (!div.innerHTML) {
     const elemSpan = document.createElement('span');

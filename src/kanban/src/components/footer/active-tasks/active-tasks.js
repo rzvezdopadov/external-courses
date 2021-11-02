@@ -1,5 +1,4 @@
 /* eslint-disable import/extensions */
-/* eslint-disable no-restricted-syntax */
 import { getState } from '../../state/state.js';
 
 export const UpdateActiveTask = () => {
@@ -7,11 +6,11 @@ export const UpdateActiveTask = () => {
 
   let count = 0;
 
-  for (const key in state) {
-    if (state.hasOwnProperty(key) && (Number(key) !== Object.keys(state).length - 1)) {
+  Object.keys(state).forEach((key) => {
+    if (Number(key) !== Object.keys(state).length - 1) {
       count += state[key].items.length;
     }
-  }
+  });
 
   const numberSpan = document.getElementById('active-tasks');
   if (numberSpan) numberSpan.innerHTML = count;

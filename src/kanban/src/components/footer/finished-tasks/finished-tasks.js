@@ -1,5 +1,4 @@
 /* eslint-disable import/extensions */
-/* eslint-disable no-restricted-syntax */
 import { getState } from '../../state/state.js';
 
 export const UpdateFinishedTask = () => {

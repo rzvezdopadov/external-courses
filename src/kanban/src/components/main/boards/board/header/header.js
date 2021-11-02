@@ -1,11 +1,7 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable import/no-cycle */
-/* eslint-disable quotes */
 /* eslint-disable import/extensions */
-import { CreateModalDelete } from "../../../../modal/modal.js";
-import { UpdateMain } from "../../../main.js";
+import { CreateModalDelete } from '../../../../modal/modal.js';
 
-export const CreateBoardHeader = (key, state) => {
+export const CreateBoardHeader = (key, state, CreateMain) => {
   const elemHeader = document.createElement('div');
   elemHeader.classList.add('flexboxtype');
   elemHeader.classList.add('task-board-header');
@@ -22,16 +18,17 @@ export const CreateBoardHeader = (key, state) => {
   elemButton.innerHTML = '•••';
   elemButton.addEventListener('click', () => {
     CreateModalDelete(() => {
-      state[key] = {};
+      const ourState = state;
+      ourState[key] = {};
 
       const maxElem = Object.keys(state).length;
 
       for (let i = Number(key); i < maxElem - Number(key); i += 1) {
-        state[i] = state[i + 1];
+        ourState[i] = state[i + 1];
       }
-      delete state[maxElem - 1];
+      delete ourState[maxElem - 1];
 
-      UpdateMain(state);
+      CreateMain(ourState);
     }, 'task-board', Number(key));
   });
 
