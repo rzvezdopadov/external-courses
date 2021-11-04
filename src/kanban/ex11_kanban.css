@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+} 
+
+.header, .footer {
+    background-color: rgb(37, 54, 151);
+    height: 8vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    background-color: rgb(49, 73, 209);
+    height: 83vh;
+    width: 100vw;
+    margin-bottom: 1vh;
+}
+
+ .logo, .brand, .createnewlist, .avatar, 
+ .activetasks, .taskscount {
+    margin: 1vh;
+}
+
+.logo {
+    height: 6vh;
+    width: 6vh;
+}
+
+.brand {
+    color: white;
+    font-size: 3vh;
+}
+
+.createnewlist {
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5vh;
+    background-color: white;
+    height: 4vh;
+    width: 18vh;
+    font-weight: bold;
+    font-size: 1.7vh;
+}
+.addimg {
+    height: 3vh;
+    width: 3vh;
+}
+
+.avatarimg {
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+    margin-right: 1vh;
+}
+
+.tasks, .boardname {
+    color: white;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 2vh;
+}
+
+#activecount, #finishedcount, #lastyear {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#username {
+    margin-left: 10px;
+}
+
