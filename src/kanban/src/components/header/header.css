@@ -1,5 +1,5 @@
-@import url('/src/kanban/src/components/header/blockleft/blockleft.css');
-@import url('/src/kanban/src/components/header/blockright/blockright.css');
+@import url('blockleft/blockleft.css');
+@import url('blockright/blockright.css');
 .header {
     flex: 0 0 auto;
     display: flex;

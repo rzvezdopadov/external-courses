@@ -1,3 +1,23 @@
+/* eslint-disable import/extensions */
+import { getState } from '../../state/state.js';
+
+export const UpdateActiveTask = () => {
+  const state = getState();
+
+  let count = 0;
+
+  Object.keys(state).forEach((key) => {
+    if (Number(key) !== Object.keys(state).length - 1) {
+      count += state[key].items.length;
+    }
+  });
+
+  const numberSpan = document.getElementById('active-tasks');
+  if (numberSpan) numberSpan.innerHTML = count;
+
+  return count;
+};
+
 export const CreateActiveTask = () => {
   const div = document.createElement('div');
 
@@ -8,7 +28,7 @@ export const CreateActiveTask = () => {
   const numberSpan = document.createElement('span');
   numberSpan.classList.add('active-tasks');
   numberSpan.id = 'active-tasks';
-  numberSpan.innerHTML = '0';
+  numberSpan.innerHTML = UpdateActiveTask();
 
   div.appendChild(labelSpan);
   div.appendChild(numberSpan);

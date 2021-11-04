@@ -8,9 +8,9 @@ export const UserMenu = () => {
 
   const userAvatarImg = document.createElement('img');
   userAvatarImg.classList.add('user-avatar');
-  let imgSrc = 'http://admin.redmuseum.church/wp-content/uploads/2020/06/1-61.jpg';
+  let imgSrc = 'https://www.spletnik.ru/img/__post/49/49f4f42c0993272be87db2eb48f4cabb_275.jpg';
   userAvatarImg.src = imgSrc;
-  userAvatarImg.alt = imgSrc;
+  userAvatarImg.alt = 'Not pictire';
 
   userAvatarContainer.appendChild(userAvatarImg);
 
@@ -18,7 +18,7 @@ export const UserMenu = () => {
   arrowDownContainer.classList.add('arrow-down-container');
 
   const arrowDownImg = document.createElement('img');
-  imgSrc = '../../src/kanban/src/images/arrow-down.png';
+  imgSrc = './src/images/arrow-down.png';
   arrowDownImg.src = imgSrc;
   arrowDownImg.alt = imgSrc;
   arrowDownImg.id = 'arrow-down';

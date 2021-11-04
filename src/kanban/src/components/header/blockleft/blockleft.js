@@ -5,7 +5,7 @@ export const CreateBlockLeft = () => {
 
   const img = document.createElement('img');
   img.classList.add('logo');
-  const imgSrc = '../../src/kanban/src/images/logo.png';
+  const imgSrc = './src/images/logo.png';
   img.src = imgSrc;
   img.alt = imgSrc;
 
