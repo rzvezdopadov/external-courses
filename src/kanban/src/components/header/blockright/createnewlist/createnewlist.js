@@ -31,7 +31,7 @@ export const CreateNewList = () => {
       CreateMain(state);
     });
   });
-
+  
   button.appendChild(img);
   button.appendChild(span);
   return button;

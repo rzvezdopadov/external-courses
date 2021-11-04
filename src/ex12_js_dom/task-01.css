@@ -1,0 +1,116 @@
+.classflex {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    align-items: center;
+    flex-flow: column;
+}
+
+.photo {
+    border: dotted 2px thistle;
+    border-radius: 1rem;
+}
+
+.photomini {
+    height: 7rem;
+    width: 7rem;
+    margin: 10px;
+}
+
+.mainphoto {
+    height: 19rem;
+    width: 19rem;
+}
+
+.mainphoto, .photomini {
+    border-radius: 2rem;
+}
+
+#photocenter {
+    border: solid 5px greenyellow;
+}
+
+#photoleft, #photoright {
+    border: solid 5px rgb(105, 140, 255);
+}
+
+#photoleft:hover, #photoright:hover {
+    border: solid 5px rgb(255, 105, 105);
+    cursor: pointer;
+}
+
+.btn {
+    border: solid 2px springgreen;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    border: solid 2px tomato;
+}
+
+.slideleft {
+    animation: vischangeleft 0.5s alternate;
+}
+
+@keyframes vischangeleft {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-50vw);
+    }
+}
+
+.slideleftreverse {
+    animation: vischangeleftreverse 0.5s alternate;
+}
+
+@keyframes vischangeleftreverse {
+    to {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(50vw);
+    }
+}
+
+.slidedown {
+    animation: vischangedown 0.5s alternate;
+}
+
+@keyframes vischangedown {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(100vh);
+    }
+}
+
+.slideright {
+    animation: vischangeright 0.5s backwards;
+}
+
+@keyframes vischangeright {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(50vw);
+    }
+}
+
+.sliderightreverse {
+    animation: vischangerightreverse 0.5s backwards;
+}
+
+@keyframes vischangerightreverse {
+    from {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0vw);
+    }
+    to {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-50vw);
+    }
+}
