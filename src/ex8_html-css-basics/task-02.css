@@ -1,0 +1,15 @@
+p {
+    margin: 0;
+}
+
+.uldisk {
+  list-style: disc;
+}
+
+.ulcircle {
+    list-style: circle;
+}
+
+.ulsquare {
+    list-style: square;
+}

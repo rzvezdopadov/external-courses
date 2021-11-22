@@ -1,0 +1,58 @@
+p {
+    margin: 0;
+}
+
+.uldisk {
+  list-style: disc;
+}
+
+.ulcircle {
+    list-style: circle;
+}
+
+.ulsquare {
+    list-style: square;
+}
+
+ol > li {
+  background-color: brown;  
+}
+
+ol > li:hover {
+    background-color: rgb(52, 165, 42);  
+  }
+
+#discrlist {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    border: solid coral 5px;
+    border-radius: 1rem;
+    outline: solid springgreen 1vh;
+    max-width: 20em;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4763ff;
+    font-size: 1vw;
+}
+
+img {
+    width: 450px;
+    height: 120px;
+    border: solid cornflowerblue 6px;
+}
+
+h2 {
+    font-family: "Ephesis-Regular";
+    color:crimson;
+}
+
+@font-face {
+    font-family: "Ephesis-Regular"; 
+    src: url("Ephesis-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+
