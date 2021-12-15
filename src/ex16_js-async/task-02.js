@@ -1,23 +1,21 @@
-window.onload = () => {
-  const inputDebouncesFunc = () => {
-    let flagEnable = false;
+const inputDebouncesFunc = () => {
+  let flagEnable = false;
 
-    return function fIn() {
-      if (flagEnable) return;
+  return function fIn() {
+    if (flagEnable) return;
 
-      flagEnable = true;
+    flagEnable = true;
 
-      setTimeout(() => {
-        flagEnable = false;
+    setTimeout(() => {
+      flagEnable = false;
 
-        document.getElementById('spanDebounces').innerHTML = document.getElementById('inputDebounces').value;
-      }, 2000);
-    };
+      document.getElementById('spanDebounces').innerHTML = document.getElementById('inputDebounces').value;
+    }, 2000);
   };
-
-  document.getElementById('inputDebounces').addEventListener('input', inputDebouncesFunc());
-
-  document.getElementById('inputRegular').addEventListener('input', () => {
-    document.getElementById('spanRegular').innerHTML = document.getElementById('inputRegular').value;
-  });
 };
+
+document.getElementById('inputDebounces').addEventListener('input', inputDebouncesFunc());
+
+document.getElementById('inputRegular').addEventListener('input', () => {
+  document.getElementById('spanRegular').innerHTML = document.getElementById('inputRegular').value;
+});
